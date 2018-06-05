@@ -1,6 +1,6 @@
-#Readable project, build a content and comment web app 
+# Readable project, build a content and comment web app 
 
-##How to install and Start
+## How to install and Start
 The application requires only `npm install` and `npm start` to install and launch.
 
 * Most application state is managed by the Redux store. State-based props are mapped from the store rather than stored as component state.
