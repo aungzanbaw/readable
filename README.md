@@ -6,7 +6,7 @@ To get started right away:
 The application requires only `npm install` and `npm start` to install and launch.
 
 * Readable API Server
-Get the API source code from Github [https://github.com/udacity/reactnd-project-readable-starter]
+Get the API source code from [Github](https://github.com/udacity/reactnd-project-readable-starter)
     * `cd api-server`
     * `npm install`
     * `node server`
