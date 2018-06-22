@@ -17,11 +17,22 @@ class Header extends Component {
                                 <li className="nav-item active">
                                     <Link className="nav-link" to="/">Home</Link> 
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to="/category">Category</Link>
-                                </li> 
+                                {
+                                    /* <li className="nav-item">
+                                    <Link className="nav-link" to="/category">All categories</Link>
+                                    </li>*/
+                                } 
+                                <li className="nav-item"> 
+                                    <Link className="nav-link" to="/">Category</Link>
+                                </li>
+                                <li className="nav-item"> 
+                                    <Link className="nav-link" to="/">Category</Link>
+                                </li>
+                                <li className="nav-item"> 
+                                    <Link className="nav-link" to="/">Category</Link> 
+                                </li>
                                 <Switch> 
-                                    <Route exact path="/" component={() => (<li className="nav-item"><Link className="nav-link btn btn-outline-primary" to="/">Add new post</Link></li>)} /> 
+                                    <Route exact path="/" component={() => (<li className="nav-item"><Link className="nav-link btn btn-outline-primary" to="/post/new">Add new post</Link></li>)} /> 
                                 </Switch>
                                 
                             </ul>

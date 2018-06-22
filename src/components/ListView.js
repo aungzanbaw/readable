@@ -6,23 +6,28 @@ class ListView extends Component {
     render(){
         return(
             <div className="row">
-                <nav className="col-lg-12 nav justify-content-end">
-                    <Link className="nav-link" to="/">Category</Link>
-                    <Link className="nav-link" to="/">Category</Link>
-                    <Link className="nav-link" to="/">Category</Link> 
+                <br/>
+                <div className="col-lg-4 text-center"> 
                     <select>
                         <option selected>Sort by...</option>
                         <option value="1">Date</option>
                         <option value="2">Score</option> 
                     </select>
-                </nav> 
-                <table class="table table-borderless">
-                     
+                </div> 
+                <h3 className="col-lg-4 text-center">
+                    Sorted by score
+                </h3> 
+                <h3 className="col-lg-4 text-center">
+                    Total 2 posts
+                </h3> 
+                <table class="table table-borderless"> 
                     <tbody>
                         <tr> 
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit, Otto</td> 
-                            <td>-5 votes</td>
-                            <td>3 comments</td>
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit by <b>Otto</b>
+                                <span class="badge badge-light">(category)</span>
+                            </td> 
+                            <td><span class="badge badge-secondary">-5</span> votes</td>
+                            <td><span class="badge badge-dark">4</span> comments</td>
                             <td>
                                 <button type="button" class="btn btn-sm btn-outline-dark">detail</button>&nbsp;
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Up vote</button>&nbsp;
@@ -32,9 +37,11 @@ class ListView extends Component {
                             </td> 
                         </tr>
                         <tr> 
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit, Thornton</td> 
-                            <td>5 votes</td>
-                            <td>1 comments</td>
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit by <b>Thornton</b>
+                                <span class="badge badge-light">(category)</span>
+                            </td> 
+                            <td><span class="badge badge-secondary">-5</span> votes</td>
+                            <td><span class="badge badge-dark">1</span> comments</td>
                             <td>
                                 <button type="button" class="btn btn-sm btn-outline-dark">detail</button>&nbsp;
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Up vote</button>&nbsp;
@@ -44,9 +51,11 @@ class ListView extends Component {
                                 </td>
                         </tr>
                         <tr> 
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit, Larry Bird</td> 
-                            <td>0 votes</td>
-                            <td>0 comments</td>
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit by <b>Larry Bird</b>
+                                <span class="badge badge-light">(category)</span>
+                            </td> 
+                            <td><span class="badge badge-secondary">0</span> votes</td>
+                            <td><span class="badge badge-dark">0</span> comments</td>
                             <td>
                                 <button type="button" class="btn btn-sm btn-outline-dark">detail</button>&nbsp;
                                 <button type="button" class="btn btn-sm btn-outline-secondary">Up vote</button>&nbsp;
@@ -56,7 +65,7 @@ class ListView extends Component {
                             </td>
                         </tr>
                     </tbody>
-                </table>
+                </table> 
             </div>
         )
     }

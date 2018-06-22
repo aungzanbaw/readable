@@ -1,8 +1,9 @@
 # Readable project, build a content and comment web app 
+Udacity React & Redux project
 
 ## How to install and Start
 To get started right away:
-* Readable Clientside, the application requires only `npm install` and `npm start` to install and launch.
+* Readable Clientside, the application requires only `npm install` then `npm start` to install dependencies and launch.
 
 * Readable API Server, get the API source code from [Github](https://github.com/udacity/reactnd-project-readable-starter)
     * `cd api-server`
