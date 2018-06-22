@@ -4,20 +4,21 @@ import { Route } from 'react-router-dom'
 import Header from './Header'
 import ListView from './ListView'
 import CategoryView from './CategoryView'
+import { withRouter } from 'react-router'
 
 class App extends Component {
 	render() {
 		return (
-			<div className="App">
-				<Header />
+			<div className="container"> 
+				<Header />  
 				<Route exact path="/" render={()=> (<ListView/>)}/>
-				<Route path="/category" render={()=> (<CategoryView/>)}/>
+				<Route exact path="/category" render={()=> (<CategoryView/>)}/>
 			</div>
 		)
 	}
 }
 
-export default connect()(App)
+export default withRouter(connect()(App))
 
 // const mapDispatchToProps 
 // const mapStateToProps 
